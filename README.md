@@ -1,6 +1,3 @@
-Sure! Here's your README content with a touch of emojis to make it visually appealing and modern — just enough to enhance the vibe without overdoing it:
-
----
 
 # 🎯 Student Exam Performance Indicator
 
