@@ -26,11 +26,39 @@
         }
         .btn-primary {
             width: 100%;
-            background-color: #007bff;
-            border: none;
+            background-color: #343a40;
+            border: 2px solid #343a40;
+            color: white;
+            position: relative;
+            transition: all 0.3s ease;
+            overflow: hidden;
+            z-index: 1;
         }
+
         .btn-primary:hover {
-            background-color: #0056b3;
+            background-color: #343a40;
+            border-color: #8a2be2;
+            box-shadow: 0 0 15px #8a2be2;
+            color: #fff;
+        }
+
+        .btn-primary:hover::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(138, 43, 226, 0.4), transparent);
+            transform: translateX(-100%);
+            animation: glowingEffect 1.5s infinite;
+            z-index: -1;
+        }
+
+        @keyframes glowingEffect {
+            100% {
+                transform: translateX(100%);
+            }
         }
         .form-label {
             font-weight: bold;
